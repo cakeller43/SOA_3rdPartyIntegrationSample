@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.1" />
+    <PackageReference Include="NServiceBus" Version="7.1.6" />
+    <PackageReference Include="NServiceBus.Autofac" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ItOps.Integration\ItOps.Integration.csproj" />
+    <ProjectReference Include="..\ServiceA.Integration\ServiceA.Integration.csproj" />
+    <ProjectReference Include="..\ServiceB.Integration\ServiceB.Integration.csproj" />
+    <ProjectReference Include="..\ServiceC.Integration\ServiceC.Integration.csproj" />
+  </ItemGroup>
+
+</Project>
